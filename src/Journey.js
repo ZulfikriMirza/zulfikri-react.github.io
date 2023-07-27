@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import instagram from "./assets/instagram.png"
 import linkedln from "./assets/linkedln-white.png"
 import './Journey.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Journey() {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
         <section className="Journey">
-            <h1>My Life Journey !</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1000">My Life Journey !</h1>
             <div className="Journey__content">
 
-                <div className="Journey__Experience">
+                <div data-aos="fade-right" data-aos-duration="1500" className="Journey__Experience">
                     <h2>Work and Organization Experience!</h2>
                     <ul>
                     <li>
@@ -36,7 +41,7 @@ export default function Journey() {
                     </ul>
                 </div>
                 <div className="Journey__Skill__Content">
-                    <div className="Journey__Skill">
+                    <div data-aos="fade-left" data-aos-duration="2000" className="Journey__Skill">
                     <h2>My Current Skill!</h2>
                     <ul>
                         <li>
@@ -50,15 +55,17 @@ export default function Journey() {
                         </li>
                     </ul>
                     </div>
-                    <h2>My Media Social Account !</h2>
-                    <div className="Jourey__Contact">
+                    <div data-aos="fade-left" data-aos-duration="2500">
+                        <h2>My Media Social Account !</h2>
+                        <div className="Jourey__Contact">
 
-                    <li>
-                        <img src={instagram} alt='Instagram'></img>
-                    </li>
-                    <li>
-                        <img src={linkedln} alt='Linkedln'></img>
-                    </li>
+                        <li>
+                            <img src={instagram} alt='Instagram'></img>
+                        </li>
+                        <li>
+                            <img src={linkedln} alt='Linkedln'></img>
+                        </li>
+                        </div>
                     </div>
                 </div>
             </div>
