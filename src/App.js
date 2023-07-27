@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import citynight from "./assets/citynight.png"
+import Profile from './Profile';
+import Journey from './Journey';
+import Project from './Project';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <img className="profile__background" src={citynight} alt="background" />
+      <div className="container">
+        <Profile />
+        <Journey />
+        <Project />
+      </div>
+    </>
   );
 }
 

@@ -1,0 +1,164 @@
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: black;
+    height: 100vh;
+    color: white;
+  
+  }
+  
+  .project__title {
+    font-weight: 700;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .project__card .card {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 350px;
+  }
+  
+  .project__card .card h3 {
+    color: #000;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .project__card .card img {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .project__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .project__btn {
+    background: #fff;
+  
+    border: 2px solid white;
+    width: fit-content;
+    margin-top: 50px;
+    font-weight: 600;
+    border-radius: 15px;
+  }
+  
+  .project__btn a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .project__btn a img {
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+  }
+
+@media only screen and (max-width: 1024px) {
+
+  .project {
+    overflow: hidden;
+  }
+  .project__card .card {
+    width: 18rem;
+    
+  }
+}
+
+@media only screen and (max-width: 958px) {
+
+  .project {
+    overflow: hidden;
+  }
+
+  .project__card {
+    width: fit-content;
+    height: fit-content;
+  }
+  .project__card .card {
+    width: 16rem;
+    height: 16rem;
+    
+  }
+
+  .project__card .card img {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 848px) {
+
+  .project {
+    position: relative;
+    height: 100%;
+
+  }
+  .project__content {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .project__title {
+    margin: 50px;
+  }
+  .project__card {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .project__card .card {
+
+    width: 24rem;
+    height: 24rem;
+    
+  }
+
+  .project__card .card img {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .project__btn { 
+
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480) {
+  .project__content .project__title{
+    font-size: 12px;
+  }
+}
