@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/zulfikri-react.github.io/static/css/main.1eac09f4.css",
+    "main.css": "/zulfikri-react.github.io/static/css/main.1509ae02.css",
     "main.js": "/zulfikri-react.github.io/static/js/main.721ee41d.js",
     "static/js/787.5242c071.chunk.js": "/zulfikri-react.github.io/static/js/787.5242c071.chunk.js",
     "static/media/citynight.png": "/zulfikri-react.github.io/static/media/citynight.5b8a9ce66bf4dcdac13c.png",
     "static/media/instagram.png": "/zulfikri-react.github.io/static/media/instagram.64c8bf1fd350cef178ce.png",
     "static/media/github.png": "/zulfikri-react.github.io/static/media/github.873a4ccb8c31f7bda25f.png",
     "index.html": "/zulfikri-react.github.io/index.html",
-    "main.1eac09f4.css.map": "/zulfikri-react.github.io/static/css/main.1eac09f4.css.map",
+    "main.1509ae02.css.map": "/zulfikri-react.github.io/static/css/main.1509ae02.css.map",
     "main.721ee41d.js.map": "/zulfikri-react.github.io/static/js/main.721ee41d.js.map",
     "787.5242c071.chunk.js.map": "/zulfikri-react.github.io/static/js/787.5242c071.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1eac09f4.css",
+    "static/css/main.1509ae02.css",
     "static/js/main.721ee41d.js"
   ]
 }
