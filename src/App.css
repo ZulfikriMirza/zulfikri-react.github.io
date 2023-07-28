@@ -7,7 +7,8 @@
   display: flex;
   overflow: hidden;
   flex-direction: column;
-  max-width: 98.7vw;
+  min-width: 98.7vw;
+  
 }
 
 .profile__background {
@@ -20,6 +21,15 @@
   height: 100vh;
   transition: margin .5s;
 } 
+
+.button-toggle {
+  background: #fff;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 999;
+}
 
 @media only screen and (max-width: 1024px) {
   .container {
