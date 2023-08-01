@@ -50,6 +50,9 @@ function App() {
     setIsLightMode(savedLightMode || false);
     AOS.init();
   }, [])
+
+  
+
   return (
     <>
       <img data-aos="fade-down" data-aos-duration="1000" className="profile__background" src={citynight} alt="background" />
@@ -59,9 +62,11 @@ function App() {
         </button>
       </div>
       <div className="container">
+
         <Profile />
         <Journey />
         <Project />
+
       </div>
     </>
   );
