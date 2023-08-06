@@ -3,6 +3,7 @@
     padding: 0;
     min-height: 100vh;
     color: #fff;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +17,14 @@
     align-items: center;
     flex-direction: column;
     position: relative;
+    
+  }
+  
+  .typing-animation {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-left: 10px;
+
   }
 
   .notes { 
@@ -29,8 +38,32 @@
     
     color: #fff;
     font-weight: 700;
+
     
   }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+  }
+  
+  .typing-animation .cursor {
+    display: inline-block;
+    width: 0.5rem;
+    height: 2rem;
+    border-right: 10px solid #fff;
+    animation: blink-caret 0.75s step-end infinite;
+    margin-left: 10px;
+  }
+  
+  .typing-animation .typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40) infinite, blink-caret 0.75s step-end infinite;
+    margin-left: 10px;
+  }
+  
 
   @media only screen and (max-width: 1024px) {
     .Profile {

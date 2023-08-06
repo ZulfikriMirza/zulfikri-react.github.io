@@ -1,12 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Profile.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 export default function Profile() {
+
+  
+
     useEffect(() => {
         AOS.init();
       }, [])
+      
     return (
         <>
             <section data-aos="fade-down" data-aos-duration="1500" className="profile">
@@ -15,10 +20,17 @@ export default function Profile() {
                             <br/>feel free to email me on zulfikrimirza3@gmail.com, i will remove it immediately
                         </p>
                 </div>
-                <div className = "profile__content">
-                    <h1 className="profile__title">ZULFIKRI MIRZA</h1>
+                <div className="profile__content">
+                    <div className="typing-animation">
+                        <h1 className="profile__title 2xl:text-4xl md:text-base xl:text-2xl">
+                            ZULFIKRI MIRZA
+                        </h1>
 
+                        <span className='text-lg font-semibold'></span>
+                        <span className='cursor'>&nbsp;</span>
+                    </div>
                 </div>
+
             </section>
         </>
     );

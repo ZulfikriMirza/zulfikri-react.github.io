@@ -14,30 +14,30 @@ export default function Project() {
             <section className="project">
 
                 <div className = "project__content">
-                    <h1 data-aos="fade-down" data-aos-duration="1500" className="project__title">LAST PROJECT THAT I MADE</h1>
+                    <h1 data-aos="fade-down" data-aos-duration="1500" className="project__title 2xl:text-4xl xl:text-2xl md:text-base">LAST PROJECT THAT I MADE</h1>
                     <div className="project__card">
-                        <div data-aos="fade-down" data-aos-duration="800" className="card">
+                        <div data-aos="fade-down" data-aos-duration="800" className="card hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">
                             <img src={not} className="card-img-top" alt="notfound" />
-                            <h3>On Developing Progress</h3>
+                            <h3 className='2xl:text-4xl xl:text-2xl md:text-base'>On Developing Progress</h3>
                         </div>
 
                         <div data-aos="fade-down" data-aos-duration="600" className="card">
                             <img src={not} className="card-img-top" alt="notfound" />
-                            <h3>On Developing Progress</h3>
+                            <h3 className='2xl:text-4xl xl:text-2xl md:text-base'>On Developing Progress</h3>
                         </div>
 
                         <div data-aos="fade-down" data-aos-duration="400" className="card">
                             <img src={not} className="card-img-top" alt="notfound" />
-                            <h3>On Developing Progress</h3>
+                            <h3 className='2xl:text-4xl xl:text-2xl md:text-base'>On Developing Progress</h3>
                         </div>
 
 
                     </div>
                     <div data-aos="fade-down" data-aos-duration="200" className="project__button">
                         <div className='project__btn'>
-                        <a href="https://google.com" class="button">Check More on my Github!
-                        <img src={github} alt="github" />
-                        </a>
+                            <a href="https://github.com/ZulfikriMirza" target="_blank" className="w-[150px] h-[50px] flex justify-center align-center">
+                                <img src={github} alt="github"/>
+                            </a>
                         </div>
                     </div>
                 </div>
