@@ -20,10 +20,11 @@ function App() {
     const ProjectElements = document.querySelectorAll('.project');
     const buttonElements = document.querySelectorAll('.button-toggle');
     
-    const textColor = isLightMode ? 'black' : '#CDCDCD';
-    const bgColor = isLightMode ? '#CDCDCD' : 'black';
-    const buttonTextcolor = isLightMode ?  '#CDCDCD' : 'black';
-    const buttonBgColor = isLightMode ? 'black' : '#CDCDCD';
+    const textColor = isLightMode ? 'black' : 'white';
+    const bgColor = isLightMode ? 'white' : 'black';
+    const buttonTextcolor = isLightMode ?  'white' : 'black';
+    const buttonBgColor = isLightMode ? 'black' : 'white';
+
 
     JourneyElements.forEach((element) => {
       element.style.transition = 'color 0.5s, background-color 0.5s';
@@ -35,6 +36,7 @@ function App() {
       element.style.transition = 'color 0.5s, background-color 0.5s';
       element.style.color = textColor;
       element.style.backgroundColor = bgColor;
+  
     });
 
     buttonElements.forEach((element) => {
@@ -56,7 +58,7 @@ function App() {
   return (
     <>
 
-      <img data-aos="fade-down" data-aos-duration="1000" className="profile__background w-full sm:h-[970px] md:h-[970px] lg:h-[1000px] xl:h-[970px]" src={citynight} alt="background" />
+      <img data-aos="fade-down" data-aos-duration="1000" className="profile__background sm:h-[970px] md:h-[970px] lg:h-[1000px] xl:h-[970px]" src={citynight} alt="background" />
       <div>
         <button className='btn button-toggle' onClick={toggleLightMode}>
           {isLightMode ? 'Switch to Dark Mode': 'Switch to Light Mode'}

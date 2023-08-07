@@ -16,7 +16,7 @@ export default function Project() {
                 <div className = "project__content">
                     <h1 data-aos="fade-down" data-aos-duration="1500" className="project__title 2xl:text-4xl xl:text-2xl md:text-base">LAST PROJECT THAT I MADE</h1>
                     <div className="project__card">
-                        <div data-aos="fade-down" data-aos-duration="800" className="card hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">
+                        <div data-aos="fade-down" data-aos-duration="800" className="card">
                             <img src={not} className="card-img-top" alt="notfound" />
                             <h3 className='2xl:text-4xl xl:text-2xl md:text-base'>On Developing Progress</h3>
                         </div>

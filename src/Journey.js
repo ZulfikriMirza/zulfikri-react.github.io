@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import instagram from "./assets/instagram.png"
-import linkedln from "./assets/linkedln-white.png"
+
 import './Journey.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,11 +10,11 @@ export default function Journey() {
       }, [])
     return (
         <section className="Journey">
-            <h1 className='2xl:text-8xl xl:text-4xl md:text-base' data-aos="fade-down" data-aos-duration="1000">My Life Journey !</h1>
+            <h1 className='Journey__title 2xl:text-8xl xl:text-4xl md:text-base' data-aos="fade-down" data-aos-duration="1000">My Life Journey !</h1>
             <div className="Journey__content flex justify-center ">
 
-                <div data-aos="fade-right" data-aos-duration="1500" className="Journey__Experience grid gap-16">
-                    <h2 className='2xl:text-4xl xl:text-2xl md:text-base'>Work and Organization Experience!</h2>
+                <div data-aos="fade-right" data-aos-duration="1500" className="Journey__Experience grid gap-16 md:gap-8">
+                    <h2 className='2xl:text-4xl xl:text-2xl md:text-base font-bold'>Work and Organization Experience!</h2>
                     <ul className='list-disc list-inside'>
                         <li>
                         6 Months as Lab Assistant of Digital Image Processing in Institut Teknologi Nasional Bandung (Feb 2020 - Jul 2020)
@@ -41,37 +40,21 @@ export default function Journey() {
                     </ul>
                 </div>
                 <div className="Journey__Skill__Content grid gap-8">
-                    <div data-aos="fade-left" data-aos-duration="2000" className="Journey__Skill grid gap-8">
-                    <h2 className='2xl:text-4xl xl:text-2xl md:text-base'>My Current Skill!</h2>
-                    <ul className='list-disc list-inside'>
-                        <li>
-                        Programming Language: Python, PHP, SQL
-                        </li>
-                        <li>
-                        Web Developing: Laravel Framework, Bootstrap, HTML, CSS, JS
-                        </li>
-                        <li>
-                        Other: VSCode, Git, Microsoft SQL Management Studio
-                        </li>
-                    </ul>
+                    <div data-aos="fade-left" data-aos-duration="2000" className="Journey__Skill ">
+                        <h2 className='2xl:text-4xl xl:text-2xl md:text-base font-bold'>My Current Skill!</h2>
+                        <ul className='list-disc list-inside mt-8'>
+                            <li>
+                            Programming Language: Python, PHP, SQL
+                            </li>
+                            <li>
+                            Web Developing: Laravel Framework, Bootstrap, HTML, CSS, JS
+                            </li>
+                            <li>
+                            Other: VSCode, Git, Microsoft SQL Management Studio
+                            </li>
+                        </ul>
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="2500">
-                        <h2 className='2xl:text-4xl xl:text-2xl md:text-base'>My Media Social Account !</h2>
-                        <div className="Jourey__Contact">
-
-                        <li>
-                            <a href="https://www.instagram.com/fikri.mirzaa3/" target="_blank" className="flex justify-center align-center">
-                                <img src={instagram} alt='Instagram'></img>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/zulfikri-mirza-11a7061a2/" target="_blank" className="flex justify-center align-center">
-                                <img src={linkedln} alt='Linkedln'></img>
-                            </a>
-                        </li>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>

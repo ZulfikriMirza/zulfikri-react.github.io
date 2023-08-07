@@ -5,26 +5,23 @@
     color: #fff;
     
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+
   
   }
   
 
   .profile__content {
     display: flex;
+    margin: 60px 0 0 120px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     position: relative;
+    width: 500px;
+    gap: 20px;
     
-  }
-  
-  .typing-animation {
-    display: flex;
-    align-items: center; /* Align items vertically */
-    margin-left: 10px;
-
   }
 
   .notes { 
@@ -42,28 +39,66 @@
     
   }
 
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #fff; }
+  .Profile__Contact{
+    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 10px;
+    margin-top: 0;
+    cursor: pointer;
+    width: 300px;
+
+  }
+
+  .Profile__Contact img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .instagram__button {
+    width: 120px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s;
+
+  }
+
+
+
+  .instagram__button:hover {
+    background: rgb(255, 214, 255);
+    
+  }
+
+  .instagram__button:active {
+    background: rgb(251, 149, 255);
+    
+  }
+
+  .linkedln__button {
+    width: 120px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .linkedln__button:hover {
+    background: rgb(197, 222, 255);
+    
+  }
+
+  .linkedln__button:active {
+    background: rgb(89, 191, 209);
+    
   }
   
-  .typing-animation .cursor {
-    display: inline-block;
-    width: 0.5rem;
-    height: 2rem;
-    border-right: 10px solid #fff;
-    animation: blink-caret 0.75s step-end infinite;
-    margin-left: 10px;
-  }
-  
-  .typing-animation .typing-text {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 3s steps(40) infinite, blink-caret 0.75s step-end infinite;
-    margin-left: 10px;
-  }
-  
+
 
   @media only screen and (max-width: 1024px) {
     .Profile {
@@ -72,3 +107,25 @@
     }
 
   }
+
+  @media only screen and (max-width: 720px) {
+    .profile__content{
+      width: 400px;
+      display: flex;
+      align-items: start;
+      margin: 0 0 0 40px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    .profile__content{
+      width: 400px;
+      display: flex;
+      align-items: start;
+      margin: 0 0 0 40px;
+    }
+
+  }
+
