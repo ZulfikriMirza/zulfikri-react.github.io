@@ -58,7 +58,7 @@ function App() {
   return (
     <>
 
-      <img data-aos="fade-down" data-aos-duration="1000" className="profile__background sm:h-[970px] md:h-[970px] lg:h-[1000px] xl:h-[970px]" src={citynight} alt="background" />
+      <img data-aos="fade-in" data-aos-duration="1000" className="profile__background sm:h-[970px] md:h-[970px] lg:h-[1000px] xl:h-[970px]" src={citynight} alt="background" />
       <div>
         <button className='btn button-toggle' onClick={toggleLightMode}>
           {isLightMode ? 'Switch to Dark Mode': 'Switch to Light Mode'}
