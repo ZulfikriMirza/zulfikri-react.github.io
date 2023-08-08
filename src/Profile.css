@@ -126,6 +126,9 @@
       align-items: start;
       margin: 0 0 0 40px;
     }
+    .notes {
+      visibility: hidden;
+    }
 
   }
 

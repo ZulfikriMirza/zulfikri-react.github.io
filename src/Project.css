@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 
@@ -19,21 +20,18 @@
   }
   
   .project__card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 40px;
+    display: grid;
+    gap: 20px 40px;
+    grid-template-columns: auto auto auto;
+
   }
 
 
-  .project__card .card {
+  .card {
     width: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 20px;
     height: 350px;
+    padding: 20px 50px;
   }
   
   .project__card .card h3 {
@@ -132,6 +130,10 @@
     font-size: 32px;
     font-weight: 700;
   }
+
+  .project__button {
+    
+  }
 }
 
 @media only screen and (max-width: 848px) {
@@ -154,21 +156,18 @@
     margin-top: 150px;
   }
   .project__card {
-    flex-direction: column;
-    margin: 0;
+    grid-template-columns: auto;
   }
-
   .project__card .card {
-
-    width: 24rem;
-    height: 24rem;
+    width: 16rem;
+    height: 16rem;
     
   }
 
   .project__card .card img {
     margin-top: 10px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .project__btn { 

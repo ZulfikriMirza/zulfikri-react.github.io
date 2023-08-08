@@ -33,15 +33,15 @@ export default function Project() {
 
 
                     </div>
-                    <div data-aos="fade-down" data-aos-duration="200" className="project__button">
+
+                </div>
+                <div data-aos="fade-down" data-aos-duration="200" className="project__button">
                         <div className='project__btn'>
                             <a href="https://github.com/ZulfikriMirza" target="_blank" className="w-[150px] h-[50px] flex justify-center align-center">
                                 <img src={github} alt="github"/>
                             </a>
                         </div>
                     </div>
-                </div>
-
 
                 </section>
         </>
