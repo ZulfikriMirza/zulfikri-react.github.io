@@ -14,8 +14,8 @@ export default function Journey() {
             <div className="Journey__content flex justify-center ">
 
                 <div data-aos="fade-right" data-aos-duration="1500" className="Journey__Experience grid gap-16 md:gap-8">
-                    <h2 className='2xl:text-4xl xl:text-2xl md:text-base font-bold'>Work and Organization Experience!</h2>
-                    <ul className='list-disc list-inside'>
+                    <h2 className='Experience__title 2xl:text-4xl xl:text-2xl md:text-base font-bold'>Work and Organization Experience!</h2>
+                    <ul className='Experience__list list-disc list-inside'>
                         <li>
                         6 Months as Lab Assistant of Digital Image Processing in Institut Teknologi Nasional Bandung (Feb 2020 - Jul 2020)
                         </li>
@@ -41,8 +41,8 @@ export default function Journey() {
                 </div>
                 <div className="Journey__Skill__Content grid gap-8">
                     <div data-aos="fade-left" data-aos-duration="2000" className="Journey__Skill ">
-                        <h2 className='2xl:text-4xl xl:text-2xl md:text-base font-bold'>My Current Skill!</h2>
-                        <ul className='list-disc list-inside mt-8'>
+                        <h2 className='Skill__title 2xl:text-4xl xl:text-2xl md:text-base font-bold'>My Current Skill!</h2>
+                        <ul className='Skill__list list-disc list-inside mt-8'>
                             <li>
                             Programming Language: Python, PHP, SQL
                             </li>

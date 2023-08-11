@@ -27,7 +27,7 @@ export default function Profile() {
                         <h1 className="profile__title 2xl:text-4xl md:text-base xl:text-2xl font-serif">
                             ZULFIKRI MIRZA
                         </h1>
-                        <p className='2xl:text-xl xl:text-base md:text-sm font-serif'>Highly motivated and diligent software engineer with a strong will to succeed and a passion for continuous learning. Equipped with a genuine curiosity for emerging technologies, I am always eager to expand my knowledge base.</p>
+                        <p className='profile__opening 2xl:text-xl xl:text-base md:text-sm font-serif'>Highly motivated and diligent software engineer with a strong will to succeed and a passion for continuous learning. Equipped with a genuine curiosity for emerging technologies, I am always eager to expand my knowledge base.</p>
                         <div data-aos="fade-left" data-aos-duration="2500">
                             <div className="Profile__Contact ">
 

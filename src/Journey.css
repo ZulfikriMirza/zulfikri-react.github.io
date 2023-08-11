@@ -11,16 +11,50 @@
     gap: 50px;
   }
   
-  .Journey h1 {
+  .Journey__title {
     font-weight: 800;
-
+    font-size: 48px;
+    transition: 0.25s;
   }
   
   .Journey__Experience { 
     width: 38%;
   }
   
+  .Journey__title:hover { 
+    opacity: 0.7;
+    cursor: default;
+  }
 
+  .Experience__title{
+    transition: 0.2s;
+  }
+  .Experience__title:hover {
+    opacity: 0.7;
+    cursor: default;
+  }
+  .Experience__list{
+    transition: 0.2s;
+  }
+  .Experience__list:hover {
+    opacity: 0.7;
+    cursor: default;
+  }
+
+  .Skill__title{
+    transition: 0.2s;
+  }
+  .Skill__title:hover {
+    opacity: 0.7;
+    cursor: default;
+  }
+  .Skill__list{
+    transition: 0.2s;
+  }
+  .Skill__list:hover {
+    opacity: 0.7;
+    cursor: default;
+  }
   
 @media only screen and (max-width: 1024px) {
   .Journey {
