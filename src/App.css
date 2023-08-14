@@ -15,7 +15,6 @@
   box-sizing: border-box;
   
 }
-
 .profile__background {
   display: flex;
   margin: 0;
@@ -23,10 +22,12 @@
   z-index: 0;
   position: absolute;
   
-  height: 100vh;
+  height: auto;
   width: 100vw;
+
 } 
 
+.
 .button-toggle {
   background: #fff;
   display: flex;
@@ -36,7 +37,9 @@
   z-index: 999;
   cursor: pointer;
   border-radius: 4px;
+
 }
+
 
 @media only screen and (max-width: 1024px) {
   .container {

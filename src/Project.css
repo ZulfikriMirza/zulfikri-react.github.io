@@ -38,7 +38,11 @@
     border-radius: 20px;
     height: 350px;
     padding: 20px 50px;
+    transition: 0.5s ease-in;
   }
+
+  
+
   
   .project__card .card h3 {
     color: #000;
@@ -58,11 +62,12 @@
     justify-content: center;
   
   }
-  
+
+
   .project__btn {
     background: #fff;
   
-    border: 2px solid white;
+    border: 2px solid #dadada;
     width: fit-content;
     margin-top: 50px;
     font-weight: 600;
@@ -72,6 +77,8 @@
 
   .project__btn:hover {
     background: #d1d1d1;
+    box-shadow: 3px 3px #dadada;
+    transform: scale(1.1);
 
   }
   .project__btn:active {
