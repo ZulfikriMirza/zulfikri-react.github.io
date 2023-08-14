@@ -43,6 +43,7 @@
     max-width: 800px;
     margin: 0 auto;
     position: relative;
+    transition: 0.25s ease;
   }
 
   .timeline ul {
