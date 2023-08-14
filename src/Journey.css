@@ -9,17 +9,16 @@
     padding: 0;
     color: #fff;
     gap: 50px;
+    height: fit-content;
   }
   
   .Journey__title {
     font-weight: 800;
     font-size: 48px;
     transition: 0.25s;
+    margin-top: 50px;
   }
   
-  .Journey__Experience { 
-    width: 38%;
-  }
   
   .Journey__title:hover { 
     opacity: 0.7;
@@ -28,48 +27,129 @@
 
   .Experience__title{
     transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
   }
   .Experience__title:hover {
     opacity: 0.7;
     cursor: default;
   }
-  .Experience__list{
-    transition: 0.2s;
-  }
-  .Experience__list:hover {
-    opacity: 0.7;
-    cursor: default;
+  
+  .timeline{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
   }
 
-  .Skill__title{
-    transition: 0.2s;
+  .timeline ul {
+    list-style-type: none;
   }
-  .Skill__title:hover {
-    opacity: 0.7;
-    cursor: default;
-  }
-  .Skill__list{
-    transition: 0.2s;
-  }
-  .Skill__list:hover {
-    opacity: 0.7;
-    cursor: default;
+
+  .timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
   }
   
-@media only screen and (max-width: 1024px) {
+  .timeline ul li:last-child {
+    margin-bottom: 50px;
+  }
+
+  .timeline-content h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  .timeline-content p {
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 300;
+
+  }
+
+  .timeline-content .date{
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: rgb(172, 172, 172);
+  }
+
+@media only screen and (min-width: 768px) {
   .Journey {
     overflow: hidden;
 
   }
-  .Journey__content {
-    font-size: 15px;
-    gap: 20px;
-  }
-  .Journey__Skill__Content {
-    width: 45%;
+
+  .timeline:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
   }
 
+  .timeline ul li{
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
 
+  .timeline ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(-50px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  
+  .timeline ul li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translateX(50px);
+    border-radius: 0px 20px 20px 20px;
+  }
+
+  .timeline ul li::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    top: 0;
+  }
+
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -50px;
+
+  }
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -50px;
+
+  }
+
+  .timeline ul li:hover:after {
+    background-color: aqua;
+  }
+
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
 }
 
 @media only screen and (max-width: 847px) {
@@ -82,47 +162,12 @@
   .Journey__title {
     margin-top: 50px;
   }
-  .Journey__Skill__Content {
-    width: 45%;
-  }
-
-  .Journey__content {
-
-    font-size: 13px;
-  }
+ 
 }
 
-@media only screen and (max-width: 847px) {
 
-  .Journey__title {
-    font-size: 50px;
-  }
-  .Journey__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    font-size: 15px;
-    width: fit-content;
-    gap: 20px;
-  }
-
-  .Journey__content h2 {
-    font-size: 20px;
-  }
-
-  .Journey__Skill__Content {
-    margin: 20px 0 0 50px;
-  }
-}
 
 @media only screen and (max-width: 540px) {
 
-  .Journey__Experience {
-    width: 400px;
-  }
-  .Journey__Skill__Content {
-    margin: 20px 0 0 0;
-    width: 400px;
-  }
+
 }
