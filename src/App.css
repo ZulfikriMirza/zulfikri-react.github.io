@@ -47,6 +47,10 @@
   @media only screen and (max-width: 540px) {
     .container {
       background: black;
+
+    }
+    .button-toggle{
+      visibility: hidden;
     }
     .profile__background{
       visibility: hidden;

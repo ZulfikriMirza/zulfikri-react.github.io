@@ -16,6 +16,7 @@ function App() {
   };
 
   useEffect(() => {
+
     const JourneyElements = document.querySelectorAll('.Journey');
     const ProjectElements = document.querySelectorAll('.project');
     const buttonElements = document.querySelectorAll('.button-toggle');
@@ -38,6 +39,8 @@ function App() {
       element.style.backgroundColor = bgColor;
   
     });
+
+
 
     buttonElements.forEach((element) => {
       element.style.transition = 'color 0.5s, background-color 0.5s';
